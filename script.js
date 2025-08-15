@@ -4,6 +4,7 @@ var select = document.querySelector('select')
 function changeEffect() {
   video.style.filter = select.value
 }
+select.addEveentListerner('change', changeEffect)
 
 navigator.mediaDevices
   .getUserMedia({
