@@ -1,18 +1,26 @@
-var video = document.querySelector('video'); 
-var select = document.querySelector('select')
+vconst video = document.querySelector('video');
+const select = document.querySelector('select');
 
+// Apply selected filter effect
 function changeEffect() {
-  video.style.filter = select.value
+  video.style.filter = select.value;
 }
 select.addEventListener('change', changeEffect);
 
-navigator.mediaDevices
-  .getUserMedia({
-    video: true,
+// Request camera access
+navigator.mediaDevices.getUserMedia({ video: true })
+  .then(function(stream) {
+    video.srcObject = stream;
+    video.play(); // ensure autoplay works
   })
-  .then(function (stream) {
-    video.srcObject = stream; 
-  });  
+  .catch(function(err) {
+    // Display error on the page
+    const msg = document.createElement('p');
+    msg.className = 'error';
+    msg.textContent = 'Unable to access camera. Please allow camera access.';
+    document.body.appendChild(msg);
+  });
+
 
 /*
 <html>
