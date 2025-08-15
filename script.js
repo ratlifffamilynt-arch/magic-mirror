@@ -11,7 +11,7 @@ navigator.mediaDevices
     video: true,
   })
   .then(function (stream) {
-    video.srcObject = stream;
+    video.srcObject = stream; 
   }); 
 
 
