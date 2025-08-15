@@ -4,7 +4,7 @@ var select = document.querySelector('select')
 function changeEffect() {
   video.style.filter = select.value
 }
-select.addEventListener('change', changeEffect);
+select.addEventListener('change', changeEffect); 
 
 navigator.mediaDevices
   .getUserMedia({
