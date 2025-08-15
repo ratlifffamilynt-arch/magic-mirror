@@ -2,7 +2,7 @@ var video = document.querySelector('video');
 var select = document.querySelector('select')
 
 function changeEffect() {
-  video.style.fiter = select.value
+  video.style.filter = select.value
 }
 
 navigator.mediaDevices
