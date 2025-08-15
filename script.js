@@ -40,9 +40,6 @@ navigator.mediaDevices
 
 
 
-
-
-
   /*
   
   <h1>Magic Mirror</h1>
