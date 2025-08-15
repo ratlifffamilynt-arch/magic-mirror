@@ -1,11 +1,9 @@
+var video = document.querySelector('video');
+var select = document.querySelector('select')
 
-  
-  
-  
-  
-  
-  
-  var video = document.querySelector('video');
+function changeEffect() {
+  video.style.fiter = select.value
+}
 
 navigator.mediaDevices
   .getUserMedia({
@@ -14,7 +12,35 @@ navigator.mediaDevices
   .then(function (stream) {
     video.srcObject = stream;
   });
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*
   
   <h1>Magic Mirror</h1>
