@@ -6,7 +6,6 @@ function changeEffect() {
 }
 select.addEventListener('change', changeEffect);
 
-
 navigator.mediaDevices
   .getUserMedia({
     video: true,
@@ -15,112 +14,42 @@ navigator.mediaDevices
     video.srcObject = stream; 
   });  
 
-
-
-
-
 /*
-
-
 <html>
   <body>
     
     <h1>Photo Booth</h1> 
-    <p>Choose a special effect.</p>  
+    <p>Choose a special effect.</p> 
     <p> </p> 
     <p>Me: "Mirror, Mirror on the wall, who is the ugliest of them all?"</p> 
     <p>Magic Mirror: "This person ⬇️"</p> 
     <video autoplay></video>
     <select>
-  <option value="">Choose an effect</option>
-  <option value="blur(10px)">Blur x 10</option>
-  <option value="blur(100px)">Blur x 100</option>
-  <option value="sepia(100%)">Sepia</option>
-  <option value="hue-rotate(90deg)">Color 1</option>
-  <option value="hue-rotate(180deg)">Color 2</option>
-  <option value="hue-rotate(270deg)">Color 3</option>
-  <option value="invert(100%)">Invert</option>
-  <option value="grayscale(100%)">Black and white</option>
-  <option value="hue-rotate(180deg) invert(100%) grayscale(75%) blur(3px)">Ghost</option>
-  <option value="contrast(500%)">Contrast</option>
-  <option value="blur(2px) brightness(100%) contrast(1000%) saturate(1000%) hue-rotate(200deg)">Pop art?</option>
-  <option value="saturate(1000%)">Saturate</option>
-</select>
-
+      <option value = "" > Choose an effect</option>
+      <option value = "blur(10px)" >Blur x 10</option>
+      <option value = "blur(100px)" >Blur x 100</option> 
+      <option value = "sepia(100%)">Sepia</option>
+      <option value = "hue-rotate(90deg)">Color 1</option>
+      <option value = "hue-rotate(180deg)">Color 2</option>
+      <option value = "hue-rotate(270deg)">Color 3</option>
+      <option value = "invert(100%)">Invert</option>
+      <option value = "grayscale(100%)">Black and white</option>
+      <option value = "hue-rotate(180deg) invert(100%) grayscale(75%) blur(3px)">Ghost</option>
+      <option value = "contrast(500%)">Contrast</option>
+      <option value = "blur(2px) brightness(100%) contrast(1000%) saturate(1000%) hue-rotate(200deg)">Pop art?</option>
+      <option value = "saturate(1000%)">Saturate</option>
+    </select>
+    <script src = "script.js"></script> 
     
   </body>
 </html> 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*
+/*
   
-  <h1>Magic Mirror</h1>
-    <p>Choose a special effect</p>
-    <video autoplay></video>
-    <script src = "script.js"></script>
+<h1>Magic Mirror</h1>
+<p>Choose a special effect</p>
+<video autoplay></video>
+<script src = "script.js"></script>
   
-  */
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+*/
