@@ -13,7 +13,7 @@ navigator.mediaDevices
   })
   .then(function (stream) {
     video.srcObject = stream; 
-  }); 
+  });  
 
 
 
