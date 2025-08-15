@@ -25,7 +25,7 @@ navigator.mediaDevices
     <p>Magic Mirror: "This person ⬇️"</p> 
     <video autoplay></video>
     <select>
-      <option value = "" > Choose an effect</option>
+      <option value = "" > Choose an effect test</option>
       <option value = "blur(10px)" >Blur x 10</option>
       <option value = "blur(100px)" >Blur x 100</option> 
       <option value = "sepia(100%)">Sepia</option>
@@ -39,8 +39,8 @@ navigator.mediaDevices
       <option value = "blur(2px) brightness(100%) contrast(1000%) saturate(1000%) hue-rotate(200deg)">Pop art?</option>
       <option value = "saturate(1000%)">Saturate</option>
     </select>
-    <script src = "script.js"></script> 
     
+    <script src = "script.js"></script> 
   </body>
 </html> 
 */
