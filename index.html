@@ -7,12 +7,9 @@
       video {
         width: 640px;
         height: 480px;
-        background-color: black;
+        background: black;
       }
-      select {
-        margin-top: 10px;
-      }
-      p.error {
+      .error {
         color: red;
         font-weight: bold;
       }
@@ -20,15 +17,15 @@
   </head>
   <body>
     <h1>Photo Booth</h1> 
-    <p>Choose a special effect.</p> 
-    <p></p> 
+    <p>Choose a special effect.</p>  
     <p>Me: "Mirror, Mirror on the wall, who is the ugliest of them all?"</p> 
     <p>Magic Mirror: "This person ⬇️"</p> 
     <video autoplay></video>
+
     <select>
-      <option value="">Choose an effect yo</option>
+      <option value="">Choose an effect</option>
       <option value="blur(10px)">Blur x 10</option>
-      <option value="blur(100px)">Blur x 100</option> 
+      <option value="blur(100px)">Blur x 100</option>
       <option value="sepia(100%)">Sepia</option>
       <option value="hue-rotate(90deg)">Color 1</option>
       <option value="hue-rotate(180deg)">Color 2</option>
@@ -41,28 +38,6 @@
       <option value="saturate(1000%)">Saturate</option>
     </select>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var video = document.querySelector('video'); 
-        var select = document.querySelector('select');
-
-        function changeEffect() {
-          video.style.filter = select.value;
-        }
-
-        select.addEventListener('change', changeEffect);
-
-        navigator.mediaDevices.getUserMedia({ video: true })
-          .then(function(stream) {
-            video.srcObject = stream;
-          })
-          .catch(function(err) {
-            const msg = document.createElement('p');
-            msg.className = 'error';
-            msg.textContent = 'Unable to access camera. Please allow camera access.';
-            document.body.appendChild(msg);
-          });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
