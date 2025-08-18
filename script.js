@@ -5,6 +5,8 @@ function changeEffect() {
   video.style.filter = select.value
 }
 
+select.addEventListener('change', changeEffect);
+
 navigator.mediaDevices
   .getUserMedia({
     video: true,
