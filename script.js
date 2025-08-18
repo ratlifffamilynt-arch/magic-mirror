@@ -8,7 +8,7 @@ function changeEffect() {
     if (option.value) {
       filters.push(option.value);
     }
-  }
+}
   // join them into one filter string
   video.style.filter = filters.join(" ");
 }
