@@ -4,10 +4,6 @@ var select = document.querySelector('select')
 function changeEffect() {
   video.style.filter = select.value
 }
-  // join them into one filter string
-  video.style.filter = filters.join(" ");
-}
-select.addEventListener('change', changeEffect);
 
 navigator.mediaDevices
   .getUserMedia({
