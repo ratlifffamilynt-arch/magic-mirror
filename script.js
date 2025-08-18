@@ -5,7 +5,7 @@ function changeEffect() {
   video.style.filter = select.value
 }
 
-select.addEventListener('change', changeEffect);
+select.addEventListerner('cange', changeEffect)
 
 navigator.mediaDevices
   .getUserMedia({
