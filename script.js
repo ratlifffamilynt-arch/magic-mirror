@@ -2,7 +2,15 @@ var video = document.querySelector('video');
 var select = document.querySelector('select')
 
 function changeEffect() {
-  video.style.filter = select.value
+  // collect all selected options
+  let filters = [];
+  for (let option of select.selectedOptions) {
+    if (option.value) {
+      filters.push(option.value);
+    }
+  }
+  // join them into one filter string
+  video.style.filter = filters.join(" ");
 }
 select.addEventListener('change', changeEffect);
 
